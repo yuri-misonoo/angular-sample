@@ -6,6 +6,14 @@ import { ShizuokaComponent } from './shizuoka/shizuoka.component';
 import { KumamotoComponent } from './kumamoto/kumamoto.component';
 import { MieComponent } from './mie/mie.component';
 
+import { RouterModule, Routes } from '@angular/router';
+
+const routes:Routes = [
+  { path: 'Shizuoka', component: ShizuokaComponent },
+  { path: 'Kumamoto', component: KumamotoComponent },
+  { path: 'Mie', component: MieComponent },
+]
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -14,7 +22,8 @@ import { MieComponent } from './mie/mie.component';
     MieComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    RouterModule.forRoot(routes),
   ],
   providers: [],
   bootstrap: [AppComponent]

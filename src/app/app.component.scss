@@ -1,0 +1,28 @@
+nav {
+  margin: 0px;
+  padding: 2px 5px;
+  font-size: 15px;
+  font-weight: bold;
+  background-color: #ccffff;
+}
+
+nav a {
+  text-decoration: none;
+  margin-right: 3%;
+}
+nav a:link {
+  color: #333333;
+}
+nav a:visited {
+  color: #333333;
+}
+nav a:hover {
+  color: #555555;
+}
+nav a:active {
+  color: #0000FF;
+}
+
+div.content {
+  margin: 10px;
+}

@@ -7,6 +7,7 @@ import { KumamotoComponent } from './kumamoto/kumamoto.component';
 import { MieComponent } from './mie/mie.component';
 
 import { RouterModule, Routes } from '@angular/router';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 const routes:Routes = [
   { path: 'Shizuoka', component: ShizuokaComponent },
@@ -23,6 +24,8 @@ const routes:Routes = [
   ],
   imports: [
     BrowserModule,
+    FormsModule,
+    ReactiveFormsModule,
     RouterModule.forRoot(routes),
   ],
   providers: [],

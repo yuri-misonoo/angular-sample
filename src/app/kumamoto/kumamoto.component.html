@@ -4,3 +4,15 @@
 </div>
 
 <p>{{ message }}</p>
+
+<p>{{result}}</p>
+<form [formGroup]="myControl" (submit)="onSubmit()">
+  <div>
+    <select formControlName="control">
+      <option>熊本城</option>
+      <option>阿蘇山</option>
+      <option>平山温泉</option>
+      <option>夏目友人帳～人吉市～</option>
+    </select>
+  </div>
+</form>

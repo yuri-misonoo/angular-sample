@@ -11,6 +11,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
+import { MatExpansionModule } from '@angular/material/expansion';
 
 const routes:Routes = [
   { path: 'Shizuoka', component: ShizuokaComponent },
@@ -27,6 +28,7 @@ const routes:Routes = [
   ],
   imports: [
     BrowserModule,
+    MatExpansionModule,
     MatButtonModule,
     MatIconModule,
     FormsModule,

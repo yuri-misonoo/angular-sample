@@ -8,6 +8,9 @@ import { MieComponent } from './mie/mie.component';
 
 import { RouterModule, Routes } from '@angular/router';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
 
 const routes:Routes = [
   { path: 'Shizuoka', component: ShizuokaComponent },
@@ -24,9 +27,12 @@ const routes:Routes = [
   ],
   imports: [
     BrowserModule,
+    MatButtonModule,
+    MatIconModule,
     FormsModule,
     ReactiveFormsModule,
     RouterModule.forRoot(routes),
+    BrowserAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
